@@ -1,0 +1,6 @@
+data/
+results/
+*.rds
+*.RData
+.Rhistory
+.DS_Store
