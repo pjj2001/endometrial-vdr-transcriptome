@@ -1,0 +1,155 @@
+workflow_step	tool_name	tool_id	tool_version	parameter	value
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	__input_ext	"""input"""
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	adv.seq_defline	"""@$ac.$sn/$ri"""
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	adv.minlen	null
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	adv.split	"""--split-3"""
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	adv.skip_technical	true
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len"""
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	input.input_select	"""file_list"""
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	input.__current_case__	2
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	input.file_list	null
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	__page__	0
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	__rerun_remap_job_id__	null
+3	Faster Download and Extract Reads in FASTQ	toolshed.g2.bx.psu.edu/repos/iuc/sra_tools/fasterq_dump/3.1.1+galaxy1	3.1.1+galaxy1	input_connection.input|file_list	step_1.output
+4	Convert gz compressed file to uncompressed.	CONVERTER_gz_to_uncompressed	1.0.0	__input_ext	"""input"""
+4	Convert gz compressed file to uncompressed.	CONVERTER_gz_to_uncompressed	1.0.0	__target_datatype__	"""gtf"""
+4	Convert gz compressed file to uncompressed.	CONVERTER_gz_to_uncompressed	1.0.0	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len"""
+4	Convert gz compressed file to uncompressed.	CONVERTER_gz_to_uncompressed	1.0.0	input1	null
+4	Convert gz compressed file to uncompressed.	CONVERTER_gz_to_uncompressed	1.0.0	__page__	0
+4	Convert gz compressed file to uncompressed.	CONVERTER_gz_to_uncompressed	1.0.0	__rerun_remap_job_id__	null
+4	Convert gz compressed file to uncompressed.	CONVERTER_gz_to_uncompressed	1.0.0	input_connection.input1	step_2.output
+5	Flatten collection	__FLATTEN__	1.0.0	input	null
+5	Flatten collection	__FLATTEN__	1.0.0	join_identifier	"""_"""
+5	Flatten collection	__FLATTEN__	1.0.0	__page__	0
+5	Flatten collection	__FLATTEN__	1.0.0	__rerun_remap_job_id__	null
+5	Flatten collection	__FLATTEN__	1.0.0	input_connection.input	step_3.list_paired
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	__input_ext	"""input"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	algo.params.settingsType	"""default"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	algo.params.__current_case__	0
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	chimOutType	""""""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	filter.basic_filters	null
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	filter.output_params2.output_select2	"""no"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	filter.output_params2.__current_case__	1
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.outSAMattributes[0]	"""NH"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.outSAMattributes[1]	"""HI"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.outSAMattributes[2]	"""AS"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.outSAMattributes[3]	"""nM"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.outSAMattributes[4]	"""ch"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.HI_offset	"""1"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.outSAMprimaryFlag	"""OneBestScore"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.outSAMmapqUnique	"""60"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.wasp_conditional.waspOutputMode	""""""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	oformat.wasp_conditional.__current_case__	1
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	outWig.outWigType	"""None"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	outWig.__current_case__	0
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	outWig.outWigStrand	"""false"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	perf.outBAMsortingBinsN	"""50"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	perf.winAnchorMultimapNmax	"""50"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	refGenomeSource.geneSource	"""indexed"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	refGenomeSource.__current_case__	0
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	refGenomeSource.GTFconditional.GTFselect	"""without-gtf"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	refGenomeSource.GTFconditional.__current_case__	2
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	refGenomeSource.GTFconditional.genomeDir	"""hg38"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	refGenomeSource.GTFconditional.quantmode_output.quantMode	"""-"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	refGenomeSource.GTFconditional.quantmode_output.__current_case__	0
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	singlePaired.sPaired	"""paired_collection"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	singlePaired.__current_case__	2
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	singlePaired.input	null
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	twopass.twopassMode	"""None"""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	twopass.__current_case__	0
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	twopass.twopass_read_subset	""""""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	twopass.sj_precalculated	""""""
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	__page__	0
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	__rerun_remap_job_id__	null
+6	RNA STAR	toolshed.g2.bx.psu.edu/repos/iuc/rgrnastar/rna_star/2.7.11b+galaxy1	2.7.11b+galaxy1	input_connection.singlePaired|input	step_3.list_paired
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	__input_ext	"""gtf"""
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	advanced_options.advanced_options_selector	"""default"""
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	advanced_options.__current_case__	0
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len"""
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	gtf_file	null
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	__page__	0
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	__rerun_remap_job_id__	null
+7	Convert GTF to BED12	toolshed.g2.bx.psu.edu/repos/iuc/gtftobed12/gtftobed12/357	357	input_connection.gtf_file	step_4.output1
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	__input_ext	"""input"""
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	adapters	null
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len"""
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	contaminants	null
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	input_file	null
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	input_file|__identifier__	"""SRR27731219_forward"""
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	kmers	"""7"""
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	limits	null
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	min_length	null
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	nogroup	false
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	__page__	0
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	__rerun_remap_job_id__	null
+8	FastQC	toolshed.g2.bx.psu.edu/repos/devteam/fastqc/fastqc/0.74+galaxy1	0.74+galaxy1	input_connection.input_file	step_5.output
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	__input_ext	"""input"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	alignment	null
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	alignment|__identifier__	"""SRR27731219"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	anno.anno_select	"""history"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	anno.__current_case__	2
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	anno.reference_gene_sets	null
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	anno.gff_feature_type	"""exon"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	anno.gff_feature_attribute	"""gene_id"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	anno.summarization_level	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.multifeatures.multifeat	""""""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.multifeatures.__current_case__	0
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.exon_exon_junction_read_counting_enabled.count_exon_exon_junction_reads	""""""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.exon_exon_junction_read_counting_enabled.__current_case__	1
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.long_reads	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.by_read_group	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.largest_overlap	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.min_overlap	"""1"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.frac_overlap	"""0"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.frac_overlap_feature	"""0"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.read_extension_5p	"""0"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.read_extension_3p	"""0"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.read_reduction	""""""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	extended_parameters.R	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	format	"""tabdel_short"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	include_feature_length_file	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	pe_parameters.paired_end_status	"""PE_fragments"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	pe_parameters.__current_case__	2
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	pe_parameters.check_distance_enabled.P	"""false"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	pe_parameters.check_distance_enabled.__current_case__	1
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	pe_parameters.only_both_ends	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	pe_parameters.exclude_chimerics	true
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	read_filtering_parameters.mapping_quality	"""0"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	read_filtering_parameters.splitonly	""""""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	read_filtering_parameters.primary	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	read_filtering_parameters.ignore_dup	false
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	strand_specificity	"""2"""
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	__page__	0
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	__rerun_remap_job_id__	null
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	input_connection.alignment	step_6.mapped_reads
+9	featureCounts	toolshed.g2.bx.psu.edu/repos/iuc/featurecounts/featurecounts/2.1.1+galaxy1	2.1.1+galaxy1	input_connection.anno|reference_gene_sets	step_4.output1
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	__input_ext	"""input"""
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/hg38.len"""
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	input	null
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	input|__identifier__	"""SRR27731219"""
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	mapq	"""30"""
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	refgene	null
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	sample_size	"""200000"""
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	__page__	0
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	__rerun_remap_job_id__	null
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	input_connection.input	step_6.mapped_reads
+10	Infer Experiment	toolshed.g2.bx.psu.edu/repos/nilesh/rseqc/rseqc_infer_experiment/5.0.3+galaxy0	5.0.3+galaxy0	input_connection.refgene	step_7.bed_file
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	__input_ext	"""input"""
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	chromInfo	"""/cvmfs/data.galaxyproject.org/managed/len/ucsc/?.len"""
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	comment	""""""
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	export	false
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	flat	false
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	image_content_input	null
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	png_plots	false
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	results[0].__index__	0
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	results[0].software_cond.software	"""fastqc"""
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	results[0].software_cond.__current_case__	9
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	results[0].software_cond.output[0].__index__	0
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	results[0].software_cond.output[0].type	"""data"""
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	results[0].software_cond.output[0].input	null
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	title	"""GSE254251_raw_FASTQ_MultiQC"""
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	__page__	0
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	__rerun_remap_job_id__	null
+11	MultiQC	toolshed.g2.bx.psu.edu/repos/iuc/multiqc/multiqc/1.35+galaxy2	1.35+galaxy2	input_connection.results_0|software_cond|output_0|input	step_8.text_file

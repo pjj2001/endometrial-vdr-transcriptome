@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
 from pathlib import Path
 import json
+import os
+import sys
 
 ROOT = Path(__file__).resolve().parents[1]
 SPEC = json.loads((ROOT/"config"/"Figure1_layout_spec.json").read_text(encoding="utf-8"))
-FIG = ROOT/"fig"
+FIG = Path(os.environ.get("VDR_FIGURE_OUTPUT",str(ROOT/"results"/"figures")))
+if '--check' in sys.argv:
+    assert isinstance(SPEC.get('nodes'),list) and SPEC['nodes']
+    print('Figure1: layout input available')
+    sys.exit(0)
 FIG.mkdir(parents=True, exist_ok=True)
 
 W=SPEC["canvas"]["width_px"]; H=SPEC["canvas"]["height_px"]; MM=SPEC["target_width_mm"]
@@ -98,7 +104,9 @@ for nid in order:
 svg.append("</svg>")
 s="".join(svg)
 
-svg_p=FIG/"Figure1_VDR_v4.4.svg"
+svg_p=FIG/"Figure1.svg"
+if svg_p.exists():
+    raise FileExistsError(svg_p)
 svg_p.write_text(s,encoding="utf-8")
 
 print("OK")

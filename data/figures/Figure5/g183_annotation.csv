@@ -1,0 +1,17 @@
+"cluster","broad_cell_type","subtype_label","annotation_confidence","marker_evidence","review_flag","primary_VDR_localization_eligible","primary_broad_pseudobulk_eligible","subtype_disease_inference_eligible","annotation_locked"
+"0","Stromal cells","RARRES2_RAMP1_ribosomal_stromal","MODERATE","RARRES2;RAMP1;LGALS1","",TRUE,TRUE,TRUE,TRUE
+"1","Stromal cells","GDF7_COL6A1_stromal","MODERATE","GDF7;COL6A1;COL5A1","",TRUE,TRUE,TRUE,TRUE
+"2","Stromal cells","CILP_APOD_PTGDS_stromal","HIGH","CILP;APOD;PTGDS","",TRUE,TRUE,TRUE,TRUE
+"3","Stromal cells","HOXA13_ITGA8_ECM_stromal","HIGH","HOXA13;ITGA8;COL6A3","",TRUE,TRUE,TRUE,TRUE
+"4","Stromal cells","MGP_PAMR1_MMP11_stromal","HIGH","MGP;PAMR1;MMP11","",TRUE,TRUE,TRUE,TRUE
+"5","Stromal cells","KIF20A_TOP2A_cycling_stromal","HIGH","KIF20A;TOP2A;MKI67","",TRUE,TRUE,TRUE,TRUE
+"6","NK/T cells","IL7R_CD3D_T","HIGH","IL7R;CD3D;TRAC","",TRUE,TRUE,TRUE,TRUE
+"7","Unciliated epithelial cells","PAX2_GABRP_SCGB_unciliated_epithelial","HIGH","PAX2;GABRP;KRT8;KRT18","MODERATE_DONOR_ENRICHMENT_IDENTITY_ROBUST",TRUE,TRUE,FALSE,TRUE
+"8","Unciliated epithelial cells","SCGB1D2_low_complexity_epithelial_like","LOW","SCGB1D2;SCGB2A1","LOW_COMPLEXITY_NO_ROBUST_DONOR_MARKERS",FALSE,FALSE,FALSE,TRUE
+"9","NK/T cells","GNLY_TRDC_KLRC1_NK_T","HIGH","GNLY;TRDC;KLRC1;NKG7","",TRUE,TRUE,TRUE,TRUE
+"10","Stromal cells","RGS5_MYH11_NOTCH3_perivascular_stromal","HIGH","RGS5;MYH11;NOTCH3;MCAM","",TRUE,TRUE,TRUE,TRUE
+"11","Myeloid cells","C1QC_LYZ_FOLR2_myeloid","HIGH","C1QC;LYZ;FOLR2;CD14","",TRUE,TRUE,TRUE,TRUE
+"12","Endothelial cells","ACKR1_CLDN5_EMCN_blood_endothelial","HIGH","ACKR1;CLDN5;EMCN;VWF","",TRUE,TRUE,TRUE,TRUE
+"13","Stromal cells","TOP2A_MKI67_MMP11_cycling_stromal","MODERATE","TOP2A;MKI67;MMP11;COL1A1","SEVERE_SINGLE_DONOR_DOMINANCE_NO_DISEASE_SUBTYPE_CLAIM",TRUE,TRUE,FALSE,TRUE
+"14","NK/T cells","FGFBP2_FCGR3A_cytotoxic_NK","HIGH","FGFBP2;FCGR3A;PRF1;NKG7","",TRUE,TRUE,TRUE,TRUE
+"15","Ciliated epithelial cells","C20orf85_SNTN_ciliated_epithelial","HIGH","C20orf85;SNTN;CFAP126;FOXJ1","RARE_CLUSTER_DISTRIBUTED_ACROSS_DONORS",TRUE,TRUE,FALSE,TRUE

@@ -1,0 +1,36 @@
+"broad_cell_type","contrast","whole_genome_up_n","whole_genome_down_n","locked436_focused_FDR_lt_0_05_n","locked436_concordant_focused_n"
+"Ciliated epithelial cells","LH5_vs_LH3",0,0,0,0
+"Ciliated epithelial cells","LH7_vs_LH5",0,1,16,6
+"Ciliated epithelial cells","LH9_vs_LH7",39,26,5,4
+"Ciliated epithelial cells","LH11_vs_LH9",0,0,1,0
+"Ciliated epithelial cells","LH7_vs_LH3",264,413,60,17
+"Ciliated epithelial cells","LH11_vs_LH3",520,601,44,21
+"Ciliated epithelial cells","LH11_vs_LH7",219,199,17,10
+"Myeloid cells","LH5_vs_LH3",0,1,10,9
+"Myeloid cells","LH7_vs_LH5",8,4,12,2
+"Myeloid cells","LH9_vs_LH7",0,0,0,0
+"Myeloid cells","LH11_vs_LH9",0,0,0,0
+"Myeloid cells","LH7_vs_LH3",0,0,0,0
+"Myeloid cells","LH11_vs_LH3",1,2,0,0
+"Myeloid cells","LH11_vs_LH7",38,24,6,3
+"NK/T cells","LH5_vs_LH3",282,2134,103,74
+"NK/T cells","LH7_vs_LH5",0,13,0,0
+"NK/T cells","LH9_vs_LH7",0,0,1,1
+"NK/T cells","LH11_vs_LH9",0,0,0,0
+"NK/T cells","LH7_vs_LH3",630,2710,133,86
+"NK/T cells","LH11_vs_LH3",2134,3773,160,87
+"NK/T cells","LH11_vs_LH7",228,199,2,1
+"Stromal cells","LH5_vs_LH3",0,0,0,0
+"Stromal cells","LH7_vs_LH5",43,122,38,8
+"Stromal cells","LH9_vs_LH7",46,24,4,3
+"Stromal cells","LH11_vs_LH9",534,211,96,31
+"Stromal cells","LH7_vs_LH3",889,1051,110,41
+"Stromal cells","LH11_vs_LH3",2813,2611,200,75
+"Stromal cells","LH11_vs_LH7",1738,1175,133,53
+"Unciliated epithelial cells","LH5_vs_LH3",4332,3892,115,39
+"Unciliated epithelial cells","LH7_vs_LH5",3966,4235,164,75
+"Unciliated epithelial cells","LH9_vs_LH7",10,16,0,0
+"Unciliated epithelial cells","LH11_vs_LH9",395,106,86,26
+"Unciliated epithelial cells","LH7_vs_LH3",1587,1758,101,31
+"Unciliated epithelial cells","LH11_vs_LH3",3683,2881,194,51
+"Unciliated epithelial cells","LH11_vs_LH7",1834,1124,127,40

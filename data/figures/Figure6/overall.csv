@@ -1,0 +1,14 @@
+"metric","value"
+"planned_common_model_n",25
+"informative_model_n",24
+"noninformative_model_n",1
+"direction_concordant_n",12
+"direction_discordant_n",12
+"direction_concordance_fraction",0.5
+"G250_nominal_P_lt_0_05_n",1
+"G250_corrected_q_lt_0_05_n",0
+"G183_nominal_P_lt_0_05_n",1
+"G183_corrected_q_lt_0_05_n",0
+"corrected_replicated_concordant_n",0
+"exploratory_directional_support_n",0
+"cluster8_direction_changed_n",0

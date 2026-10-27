@@ -1,0 +1,6 @@
+"broad_cell_type","retained_gene_n","whole_genome_FDR_lt_0_05_n","locked436_FDR_lt_0_05_n","occupancy284_FDR_lt_0_05_n","shared46_FDR_lt_0_05_n","promoter84_FDR_lt_0_05_n"
+"Ciliated epithelial cells",15923,1192,59,39,5,15
+"Myeloid cells",13567,69,9,11,1,7
+"NK/T cells",20513,5177,174,121,17,31
+"Stromal cells",19402,5033,211,145,17,47
+"Unciliated epithelial cells",18284,12697,293,214,33,66

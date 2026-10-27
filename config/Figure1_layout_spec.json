@@ -1,0 +1,241 @@
+{
+  "schema_version": "1.2",
+  "figure_id": "Figure1_VDR",
+  "profile": "minimal_journal_workflow",
+  "skill_version": "4.3",
+  "target_width_mm": 180.0,
+  "canvas": {
+    "width_px": 1800,
+    "height_px": 1290,
+    "background": "#FFFFFF"
+  },
+  "font_family": "Liberation Sans, Arial, Helvetica, sans-serif",
+  "style": {
+    "text": "#27323C",
+    "connector": "#65727D",
+    "program_border": "#4F8A78",
+    "program_fill": "#F3F8F6",
+    "program_heading": "#3D7E6B",
+    "testing_border": "#4B7EAF",
+    "testing_fill": "#F2F6FB",
+    "testing_heading": "#4B7EAF",
+    "synthesis_border": "#6E7F73",
+    "synthesis_fill": "#F5F7F5",
+    "boundary_border": "#7D858D",
+    "boundary_fill": "#FAFAF9",
+    "external_border": "#71879A",
+    "node_border_px": 2.6,
+    "connector_width_px": 2.2,
+    "boundary_width_px": 2.0,
+    "corner_radius_px": 14,
+    "arrow_length_px": 11,
+    "arrow_width_px": 9
+  },
+  "sections": [
+    {
+      "number": 1,
+      "title": "PROGRAM DEFINITION",
+      "x": 60,
+      "y": 90,
+      "number_color": "#3D7E6B"
+    },
+    {
+      "number": 2,
+      "title": "PRESPECIFIED PROJECTION AND DONOR-LEVEL TESTING",
+      "x": 60,
+      "y": 420,
+      "number_color": "#4B7EAF"
+    },
+    {
+      "number": 3,
+      "title": "EVIDENCE SYNTHESIS",
+      "x": 60,
+      "y": 890,
+      "number_color": "#6E7F73"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "experimental_perturbation",
+      "node_class": "information_card",
+      "x": 60,
+      "y": 165,
+      "w": 490,
+      "h": 165,
+      "stroke": "#4F8A78",
+      "fill": "#F3F8F6",
+      "title": "Experimental perturbation",
+      "body": [
+        "T-HESC RNA-seq",
+        "VDR siRNA × 2 nM calcitriol",
+        "siRNA-by-ligand interaction"
+      ],
+      "text_align": "left",
+      "padding_left_px": 34
+    },
+    {
+      "id": "rna_candidates",
+      "node_class": "information_card",
+      "x": 655,
+      "y": 165,
+      "w": 490,
+      "h": 165,
+      "stroke": "#4F8A78",
+      "fill": "#F3F8F6",
+      "title": "RNA candidates",
+      "body": [
+        "436 VDR-dependent",
+        "ligand-response candidates",
+        "Prespecified interaction criteria"
+      ],
+      "text_align": "left",
+      "padding_left_px": 34
+    },
+    {
+      "id": "locked_vdr_programs",
+      "node_class": "information_card",
+      "x": 1250,
+      "y": 165,
+      "w": 490,
+      "h": 165,
+      "stroke": "#4F8A78",
+      "fill": "#F3F8F6",
+      "title": "Defined VDR programs",
+      "body": [
+        "436 RNA • 284 supported",
+        "Shared 46 • promoter 84",
+        "Overlapping evidence layers"
+      ],
+      "text_align": "left",
+      "padding_left_px": 34
+    },
+    {
+      "id": "published_occupancy",
+      "node_class": "external_capsule",
+      "x": 1250,
+      "y": 60,
+      "w": 490,
+      "h": 58,
+      "stroke": "#71879A",
+      "fill": "#FBFCFD",
+      "title": "Published VDR occupancy (external)",
+      "body": [],
+      "text_align": "center",
+      "dashed": true
+    },
+    {
+      "id": "patient_bulk",
+      "node_class": "information_card",
+      "x": 60,
+      "y": 545,
+      "w": 490,
+      "h": 215,
+      "stroke": "#4B7EAF",
+      "fill": "#F2F6FB",
+      "title": "Patient bulk projection",
+      "body": [
+        "Four prespecified contrasts",
+        "GSE92324 • GSE165004",
+        "GSE111974 • separate design"
+      ],
+      "takeaway": "Context-specific association",
+      "text_align": "left",
+      "padding_left_px": 34
+    },
+    {
+      "id": "fertile_luteal",
+      "node_class": "information_card",
+      "x": 655,
+      "y": 545,
+      "w": 490,
+      "h": 215,
+      "stroke": "#4B7EAF",
+      "fill": "#F2F6FB",
+      "title": "Fertile luteal timing",
+      "body": [
+        "GSE250130: fertile LH+3 to LH+11",
+        "Donor-by-cell-type pseudobulk",
+        "Prespecified temporal models"
+      ],
+      "takeaway": "Strong temporal remodeling",
+      "text_align": "left",
+      "padding_left_px": 34
+    },
+    {
+      "id": "rif_tests",
+      "node_class": "information_card",
+      "x": 1250,
+      "y": 545,
+      "w": 490,
+      "h": 215,
+      "stroke": "#4B7EAF",
+      "fill": "#F2F6FB",
+      "title": "RIF donor-level tests",
+      "body": [
+        "GSE250130 LH+7 • GSE183837",
+        "Dataset-specific FDR • no pooling",
+        "Effect directions compared"
+      ],
+      "takeaway": "No corrected replication",
+      "text_align": "left",
+      "padding_left_px": 34
+    },
+    {
+      "id": "integrated",
+      "node_class": "integration_card",
+      "x": 240,
+      "y": 950,
+      "w": 1320,
+      "h": 135,
+      "stroke": "#6E7F73",
+      "fill": "#F5F7F5",
+      "title": "Integrated interpretation",
+      "body": [
+        "VDR-related programs show strong fertile luteal remodeling and selective bulk transfer,"
+      ],
+      "takeaway": "but donor-level data do not support broad, reproducible RIF disruption.",
+      "text_align": "left",
+      "padding_left_px": 30
+    },
+    {
+      "id": "boundary",
+      "node_class": "qualifier_card",
+      "x": 240,
+      "y": 1115,
+      "w": 1320,
+      "h": 120,
+      "stroke": "#7D858D",
+      "fill": "#FAFAF9",
+      "title": "Interpretation boundary",
+      "body": [
+        "Candidate programs are not definitive direct targets; patient cohorts lack harmonized",
+        "vitamin-D phenotypes. Nonsignificant disease results do not establish equivalence."
+      ],
+      "text_align": "left",
+      "padding_left_px": 30,
+      "dashed": true
+    }
+  ],
+  "routing": {
+    "stage2_distributor_y": 485,
+    "convergence_y": 845
+  },
+  "typography": {
+    "section_number_px": 29,
+    "section_title_px": 30,
+    "node_title_px": 28,
+    "node_body_px": 24,
+    "takeaway_px": 25,
+    "integration_title_px": 28,
+    "integration_body_px": 24,
+    "boundary_title_px": 27,
+    "boundary_body_px": 23
+  },
+  "constraints": {
+    "ordinary_node_top_accent": false,
+    "section_underlines": false,
+    "information_cards_left_aligned": true,
+    "shared_title_body_takeaway_anchor": true,
+    "stochastic": false
+  }
+}

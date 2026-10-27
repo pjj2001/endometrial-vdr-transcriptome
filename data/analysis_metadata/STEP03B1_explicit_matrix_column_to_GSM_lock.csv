@@ -1,0 +1,13 @@
+﻿mapping_order,matrix_column,gsm,genetic_context,ligand_status_locked,replicate_locked,verification_basis,verification_status
+1,siNTvehicle01,GSM8036787,siRNA_control,vehicle,1,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+2,siNTvehicle02,GSM8036788,siRNA_control,vehicle,2,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+3,siNTvehicle03,GSM8036789,siRNA_control,vehicle,3,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+4,siNT125OH2D301,GSM8036790,siRNA_control,calcitriol_2nM,1,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+5,siNT125OH2D302,GSM8036791,siRNA_control,calcitriol_2nM,2,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+6,siNT125OH2D303,GSM8036792,siRNA_control,calcitriol_2nM,3,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+7,siVDRvehicle01,GSM8036793,VDR_knockdown,vehicle,1,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+8,siVDRvehicle02,GSM8036794,VDR_knockdown,vehicle,2,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+9,siVDRvehicle03,GSM8036795,VDR_knockdown,vehicle,3,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+10,siVDR125OH2D301,GSM8036796,VDR_knockdown,calcitriol_2nM,1,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+11,siVDR125OH2D302,GSM8036797,VDR_knockdown,calcitriol_2nM,2,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
+12,siVDR125OH2D303,GSM8036798,VDR_knockdown,calcitriol_2nM,3,Exact matrix header condition/replicate matched to STEP03A_v4 locked GEO sample design,LOCKED
